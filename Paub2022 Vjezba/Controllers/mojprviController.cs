@@ -33,5 +33,10 @@ namespace Paub2022_Vjezba.Controllers
             ViewBag.GodinaRodenja = "2000";
             return View();
         }
+
+        public string VratiVrijeme()
+        {
+            return DateTime.Now.ToString();
+        }
     }
 }
