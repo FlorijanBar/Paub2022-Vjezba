@@ -26,11 +26,11 @@ namespace Paub2022_Vjezba.Controllers
             ViewBag.Broj = broj;
             return View();
         }
-        public ActionResult Cetvrta(string Ime, string Prezime, int GodinaRodenja = 1)
+        public ActionResult Student()
         {
-            ViewBag.Ime = Ime;
-            ViewBag.Prezime = Prezime;
-            ViewBag.GodinaRodenja = GodinaRodenja;
+            ViewBag.Ime = "Sanja";
+            ViewBag.Prezime = "Prezime";
+            ViewBag.GodinaRodenja = "2000";
             return View();
         }
     }
