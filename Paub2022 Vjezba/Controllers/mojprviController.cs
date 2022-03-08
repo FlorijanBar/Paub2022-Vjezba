@@ -28,7 +28,7 @@ namespace Paub2022_Vjezba.Controllers
         }
         public ActionResult Student()
         {
-            ViewBag.Ime = "Sanja";
+            ViewBag.Ime = "Sonja";
             ViewBag.Prezime = "Prezime";
             ViewBag.GodinaRodenja = "2000";
             return View();
