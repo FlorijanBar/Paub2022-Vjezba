@@ -38,5 +38,33 @@ namespace Paub2022_Vjezba.Controllers
         {
             return DateTime.Now.ToString();
         }
+        public string VratiVrijemeUtorak()
+        {
+            return DateTime.Now.ToString();
+        }
+
+        //Merge 14.03.2021 10:55
+        public string PericaHuten()
+        {
+            return "Perica Huten";
+        }
+
+        //Merge 14.03.2021 10:53
+        public string CarKarlo()
+        {
+            return "Karlo Car";
+        }
+        public string JovanovicMatija()
+        {
+            return "Jovanović Matija";
+        }
+        public string NovakLucija()
+        {
+            return "Novak Lucija";
+        }
+        public string BesenicErik()
+        {
+            return "Besenic Erik";
+        }
     }
 }

@@ -61,6 +61,13 @@ namespace Paub2022_Vjezba.Models
         {
             return lista;
         }
+        public void AzurirajStudenta(Student student)
+        {
+            //Pronalazimo lokaciju studenta u listi
+            int studentIndex = lista.FindIndex(x => x.ID == student.ID);
+            //Na tu lokaciju u listi stavljamo ažurirani objekt s podacima o studentu
+            lista[studentIndex] = student;
+        }
     }
    
 }

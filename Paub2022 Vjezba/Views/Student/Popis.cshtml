@@ -15,18 +15,20 @@
         <th>Oib</th>
         <th>Detalji</th>
         <th>Redovan</th>
+        <th>Ažuriranje</th>
     </tr>
 
     @foreach (var student in Model.VratiListu())
     {
-        <tr>
-            <th>@student.ID</th>
-            <th>@student.Ime</th>
-            <th>@student.Prezime</th>
-            <th>@student.Oib</th>
-            <th>@Html.ActionLink("Info","Detalji", new{id=student.ID})</th>
-            <td>@Html.CheckBox("CheckBox",student.RedovanStudent)</td>
-        </tr>
+<tr>
+    <th>@student.ID</th>
+    <th>@student.Ime</th>
+    <th>@student.Prezime</th>
+    <th>@student.Oib</th>
+    <th>@Html.ActionLink("Info", "Detalji", new { ID = student.ID })</th>
+    <td>@Html.CheckBox("CheckBox", student.RedovanStudent)</td>
+    <td>@Html.ActionLink("Ažuriraj", "Azuriraj", new { ID = student.ID })</td>
+</tr>
 
     }
 
